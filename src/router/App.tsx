@@ -1,6 +1,6 @@
 import { Routes, Route } from "react-router-dom";
 import { Dashboard } from "@/components/dashboard/dashboard";
-import { Login } from "@/login/login";
+import { Login } from "@/components/login/login";
 import { Landing } from "@/components/landing/landing";
 export default function App() {
   return (
