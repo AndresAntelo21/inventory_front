@@ -140,26 +140,10 @@
 }
 
 .sidebar-scroll::-webkit-scrollbar:vertical {
-  width: 5px;
-  background-color: #F4F4F4;
-  border-radius: 5rem;
+  display: none;
 }
 
 .sidebar-scroll::-webkit-scrollbar-button:increment,
 .sidebar-scroll::-webkit-scrollbar-button {
   display: none;
-}
-
-.sidebar-scroll::-webkit-scrollbar:horizontal {
-  height: 5rem;
-}
-
-.sidebar-scroll::-webkit-scrollbar-thumb {
-  background-color: #014699;
-  border: 2rem solid #014699;
-  border-radius: 1rem;
-}
-
-.sidebar-scroll::-webkit-scrollbar-track {
-  border-radius: 3rem;
 }

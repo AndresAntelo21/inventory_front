@@ -2,11 +2,11 @@
 
 export const Sidebar: React.FC = () => {
     return (
-        <div className="w-60 h-screen bg-black border-r-1 flex flex-col overflow-hidden ">
+        <div className=" relative w-60 h-screen bg-black border-r-1 flex flex-col overflow-hidden ">
             <div className="sticky top-0 bg-black/40 backdrop-blur-md ">
                 <div className="flex flex-row items-center gap-2 pl-2 py-4">
                     <img src="/logo/crafting-table.svg" alt="logo Systock" className="size-10" />
-                    <h1 className="text-center text-2xl font-semibold">Systock</h1>
+                    <h1 className="text-center text-2xl font-bold tracking-wider">Systock</h1>
                 </div>
                 <div className="bg-white w-full h-1"></div>
             </div>
@@ -52,6 +52,14 @@ export const Sidebar: React.FC = () => {
                     <span className="text-base">Sillas</span>
                 </div>
                 <div className=" pl-2 text-2xl flex gap-2 items-center">
+                    <img src="/sidebar-icons/cam.svg" alt="Icono de home" className="size-7" />
+                    <span className="text-base">Camaras</span>
+                </div>
+                <div className=" pl-2 text-2xl flex gap-2 items-center">
+                    <img src="/sidebar-icons/locker.svg" alt="Icono de home" className="size-7" />
+                    <span className="text-base">Lockers</span>
+                </div>
+                <div className=" pl-2 text-2xl flex gap-2 items-center">
                     <img src="/sidebar-icons/doesnt-work.svg" alt="Icono de home" className="size-7" />
                     <span className="text-base">No sirven</span>
                 </div>
@@ -59,13 +67,14 @@ export const Sidebar: React.FC = () => {
                     <img src="/sidebar-icons/warehouse.svg" alt="Icono de home" className="size-7" />
                     <span className="text-base">Bodega</span>
                 </div>
-                <div className=" pl-2 text-2xl flex gap-2 items-center">
-                    <img src="/sidebar-icons/cam.svg" alt="Icono de home" className="size-7" />
-                    <span className="text-base">Camaras</span>
-                </div>
-                <div className=" pl-2 text-2xl flex gap-2 items-center">
-                    <img src="/sidebar-icons/locker.svg" alt="Icono de home" className="size-7" />
-                    <span className="text-base">Lockers</span>
+                <div className="w-full h-17 bg-black/30 backdrop-blur-md absolute bottom-0">
+                    <div className="w-full h-1 bg-white"></div>
+                    <div className="flex items-center gap-2 p-2 h-full">
+                        <div className="size-10 bg-blue-800 rounded-full overflow-hidden">
+                            <img src="/icon-user/user.jpg" alt="foto de usuario test" className="w-full h-full" />
+                        </div>
+                        <span className="text-sm">Andres Antelo Figueroa</span>
+                    </div>
                 </div>
             </div>
         </div>
