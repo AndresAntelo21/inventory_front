@@ -10,7 +10,7 @@ export const Sidebar: React.FC = () => {
                 </div>
                 <div className="bg-white w-full h-1"></div>
             </div>
-            <div className="pt-10 flex flex-col gap-4 overflow-y-auto pb-30">
+            <div className="pt-10 flex flex-col gap-4 overflow-y-auto pb-30 sidebar-scroll">
                 <div className=" pl-2 text-2xl flex gap-2 items-center">
                     <img src="/sidebar-icons/home.svg" alt="Icono de home" className="size-7" />
                     <span className="text-base">Inicio</span>
