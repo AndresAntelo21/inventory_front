@@ -4,7 +4,7 @@ import { AuthContainer } from "@/components/login/auth-container";
 import { Landing } from "@/components/landing/landing";
 import { Error404 } from "@/components/page-not-found/page-not-found";
 import { MainLayout } from "@/router/main-layout";
-import { Home } from "@/components/home/home";
+import { MapaEmpresa } from "@/components/mapa-empresa/mapa-empresa";
 import { Operacion } from "@/components/operacion/operacion";
 import { Admin } from "@/components/admin/admin";
 import { Telefonos } from "@/components/telefonos/telefonos";
@@ -28,7 +28,7 @@ export default function App() {
         <Route path="/" element={<Landing />} />
         {/* Rutas con Sidebar */}
         <Route element={<MainLayout />}>
-          <Route path="/home" element={<Home />} />
+          <Route path="/mapa-empresa" element={<MapaEmpresa />} />
           <Route path="/dashboard" element={<Dashboard />} />
           <Route path="/operaciones" element={<Operacion />} />
           <Route path="/administrativo" element={<Admin />} />

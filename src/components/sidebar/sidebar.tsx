@@ -12,14 +12,14 @@ export const Sidebar: React.FC = () => {
             </div>
             <div className="pt-4 flex flex-col gap-3 overflow-y-auto pb-30 sidebar-scroll line-clamp-1">
                 <SidebarItem
-                    icon="/sidebar-icons/home.svg"
-                    text="Inicio"
-                    href="/home"
-                />
-                <SidebarItem
                     icon="/sidebar-icons/dashboard.svg"
                     text="Dashboard"
                     href="/dashboard"
+                />
+                <SidebarItem
+                    icon="/sidebar-icons/map.svg"
+                    text="Mapa empresa"
+                    href="/mapa-empresa"
                 />
                 <SidebarItem
                     icon="/sidebar-icons/desktop.svg"
@@ -72,7 +72,7 @@ export const Sidebar: React.FC = () => {
                     href="/lockers"
                 />
                 <SidebarItem
-                    icon="/sidebar-icons/doesnt-work.svg"
+                    icon="/sidebar-icons/wrong.svg"
                     text="No sirven"
                     href="/no-sirven"
                 />
