@@ -24,7 +24,7 @@ export const Sidebar: React.FC = () => {
                 <SidebarItem
                     icon="/sidebar-icons/desktop.svg"
                     text="Operaciones"
-                    href="/operacion"
+                    href="/operaciones"
                 />
                 <SidebarItem
                     icon="/sidebar-icons/admin.svg"
@@ -34,52 +34,52 @@ export const Sidebar: React.FC = () => {
                 <SidebarItem
                     icon="/sidebar-icons/phone.svg"
                     text="Telefonos"
-                    href="/Telefonos"
+                    href="/telefonos"
                 />
                 <SidebarItem
                     icon="/sidebar-icons/site.svg"
                     text="Site"
-                    href="/Site"
+                    href="/site"
                 />
                 <SidebarItem
                     icon="/sidebar-icons/salas.svg"
                     text="Salas"
-                    href="/Salas"
+                    href="/salas"
                 />
                 <SidebarItem
                     icon="/sidebar-icons/print.svg"
                     text="Impresoras"
-                    href="/Impresoras"
+                    href="/impresoras"
                 />
                 <SidebarItem
                     icon="/sidebar-icons/earphones.svg"
                     text="Diademas"
-                    href="/Diademas"
+                    href="/diademas"
                 />
                 <SidebarItem
                     icon="/sidebar-icons/chair.svg"
                     text="Sillas"
-                    href="/Sillas"
+                    href="/sillas"
                 />
                 <SidebarItem
                     icon="/sidebar-icons/cam.svg"
                     text="Camaras"
-                    href="/Camaras"
+                    href="/camaras"
                 />
                 <SidebarItem
                     icon="/sidebar-icons/locker.svg"
                     text="Lockers"
-                    href="/Lockers"
+                    href="/lockers"
                 />
                 <SidebarItem
                     icon="/sidebar-icons/doesnt-work.svg"
                     text="No sirven"
-                    href="/No-sirven"
+                    href="/no-sirven"
                 />
                 <SidebarItem
                     icon="/sidebar-icons/warehouse.svg"
                     text="Bodega"
-                    href="/Bodega"
+                    href="/bodega"
                 />
                 <div className="w-full h-17 bg-black/30 backdrop-blur-md absolute bottom-0 ">
                     <div className="w-full h-[1px] bg-white"></div>
