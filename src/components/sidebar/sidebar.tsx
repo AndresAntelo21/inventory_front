@@ -1,12 +1,6 @@
 // import { FaHome } from "react-icons/fa";
-import { useLocation } from "react-router-dom";
 import { SidebarItem } from "./sidebar-item";
 export const Sidebar: React.FC = () => {
-    const location = useLocation();
-
-    if (location.pathname === "/login") {
-        return null; // No renderizar el sidebar en la ruta de login
-    }
     return (
         <div className="fixed top-0 left-0 h-screen bg-black border-r-1 flex flex-col overflow-hidden hover:w-60 w-12 transition-all duration-300 ease-in-out whitespace-nowrap text-ellipsis z-10">
             <div className="sticky top-0 bg-black/40 backdrop-blur-md ">
