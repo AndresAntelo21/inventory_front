@@ -16,7 +16,7 @@ import { Sillas } from "@/components/sillas/sillas";
 import { Camaras } from "@/components/camaras/camaras";
 import { Lockers } from "@/components/lockers/lockers";
 import { NoSirve } from "@/components/no-sirve/no-sirve";
-import { Bodega } from "@/components/bodega/diademas";
+import { Bodega } from "@/components/bodega/bodega";
 
 export default function App() {
   return (
