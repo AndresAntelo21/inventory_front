@@ -1,7 +1,7 @@
 // import { Sidebar } from "@/components/sidebar/sidebar";
 export const Error404: React.FC = () => {
     return (
-        <div className="w-full h-full font-poppins flex flex-col gap-10 items-center justify-center">
+        <div className="w-screen h-screen font-poppins flex flex-col gap-10 items-center justify-center">
             <div className="flex items-center gap-4 text-3xl">
                 <span>404</span>
                 <div className="h-10 w-[1px] bg-white"></div>

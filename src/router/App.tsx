@@ -43,8 +43,8 @@ export default function App() {
           <Route path="/no-sirven" element={<NoSirve />} />
           <Route path="/bodega" element={<Bodega />} />
           {/* Rutas 404 */}
-          <Route path="*" element={<Error404 />} />
         </Route>
+        <Route path="*" element={<Error404 />} />
       </Routes>
     </>
   );
