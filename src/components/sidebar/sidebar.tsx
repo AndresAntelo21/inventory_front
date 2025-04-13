@@ -14,9 +14,9 @@ export const Sidebar: React.FC = () => {
                     <img src="/logo/crafting-table.svg" alt="logo Systock" className="size-8" />
                     <h1 className="text-center text-2xl font-bold tracking-wider">Systock</h1>
                 </div>
-                <div className="bg-white w-full h-1"></div>
+                <div className="bg-white w-full h-[1px]"></div>
             </div>
-            <div className="pt-4 flex flex-col gap-4 overflow-y-auto pb-30 sidebar-scroll line-clamp-1">
+            <div className="pt-4 flex flex-col gap-3 overflow-y-auto pb-30 sidebar-scroll line-clamp-1">
                 <SidebarItem
                     icon="/sidebar-icons/home.svg"
                     text="Inicio"
@@ -88,7 +88,7 @@ export const Sidebar: React.FC = () => {
                     href="/Bodega"
                 />
                 <div className="w-full h-17 bg-black/30 backdrop-blur-md absolute bottom-0 ">
-                    <div className="w-full h-1 bg-white"></div>
+                    <div className="w-full h-[1px] bg-white"></div>
                     <div className="pl-1 text-2xl flex gap-3 items-center pt-4">
                         <img src="/icon-user/user.jpg" alt="Icono de home" className="size-9 rounded-full" />
                         <span className="text-base">Andres Antelo</span>

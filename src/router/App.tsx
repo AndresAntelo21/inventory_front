@@ -11,9 +11,9 @@ export default function App() {
         {/* Rutas sin Sidebar */}
         <Route path="/login" element={<AuthContainer />} />
 
+        <Route path="/" element={<Landing />} />
         {/* Rutas con Sidebar */}
-        <Route element={<MainLayout />}>]
-          <Route path="/" element={<Landing />} />
+        <Route element={<MainLayout />}>
           <Route path="/home" element={<Dashboard />} />
           <Route path="*" element={<Error404 />} />
         </Route>
