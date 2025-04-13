@@ -6,7 +6,7 @@ export const Sidebar: React.FC = () => {
             <div className="sticky top-0 bg-black/40 backdrop-blur-md ">
                 <div className="flex flex-row items-center gap-3 pl-2 py-4">
                     <img src="/logo/crafting-table.svg" alt="logo Systock" className="size-8" />
-                    <h1 className="text-center text-2xl font-bold tracking-wider">Systock</h1>
+                    <h1 className="text-center text-2xl font-semibold tracking-wider text-white">Systock</h1>
                 </div>
                 <div className="bg-white w-full h-[1px]"></div>
             </div>
@@ -84,8 +84,8 @@ export const Sidebar: React.FC = () => {
                 <div className="w-full h-17 bg-black/30 backdrop-blur-md absolute bottom-0 ">
                     <div className="w-full h-[1px] bg-white"></div>
                     <div className="pl-1 text-2xl flex gap-3 items-center pt-4">
-                        <img src="/icon-user/user.jpg" alt="Icono de home" className="size-9 rounded-full" />
-                        <span className="text-base">Andres Antelo</span>
+                        <img src="/icon-user/icon.png" alt="Icono de home" className="size-9 rounded-full" />
+                        <span className="text-base text-white">Andres Antelo</span>
                     </div>
                 </div>
             </div>

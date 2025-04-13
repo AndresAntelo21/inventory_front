@@ -10,16 +10,16 @@
   font-weight: 400;
 
   color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
-  background-color: hsl(230, 90%, 4%);
+  color: rgba(15, 15, 15, 0.87);
+  background-color: hsl(230, 16%, 69%);
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   --radius: 0.625rem;
-  --background: hsl(230, 90%, 4%);
-  --foreground: hsl(0 0% 100%);
+  --background: hsl(230, 16%, 69%);
+  --foreground: hsl(0, 0%, 0%);
   --card: oklch(1 0 0);
   --card-foreground: oklch(0.145 0 0);
   --popover: oklch(1 0 0);
