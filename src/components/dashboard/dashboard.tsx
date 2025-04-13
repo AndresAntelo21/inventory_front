@@ -1,7 +1,7 @@
 export const Dashboard: React.FC = () => {
     return (
         <div className="">
-            hola
+            /Dashboard
         </div>
     );
 };
