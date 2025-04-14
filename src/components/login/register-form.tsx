@@ -1,31 +1,30 @@
-
 export const RegisterForm: React.FC = () => {
     return (
-        <form className="flex gap-4 flex-col w-full h-full font-poppins items-center justify-center">
-            <h2 className="text-3xl text-center">Crear Cuenta</h2>
+        <form className="flex flex-col gap-4 w-full max-w-sm">
+            <h2 className="text-3xl font-bold text-center mb-4">Crear Cuenta</h2>
             <input
                 type="text"
                 placeholder="Nombre completo"
-                className="border rounded-2xl p-2 w-full"
+                className="border border-gray-300 rounded-lg p-3 focus:outline-none focus:ring-2 focus:ring-blue-500"
             />
             <input
                 type="email"
                 placeholder="Correo electrónico"
-                className="border rounded-2xl p-2 w-full"
+                className="border border-gray-300 rounded-lg p-3 focus:outline-none focus:ring-2 focus:ring-blue-500"
             />
             <input
                 type="password"
                 placeholder="Contraseña"
-                className="border rounded-2xl p-2 w-full"
+                className="border border-gray-300 rounded-lg p-3 focus:outline-none focus:ring-2 focus:ring-blue-500"
             />
             <input
                 type="password"
                 placeholder="Confirmar contraseña"
-                className="border rounded-2xl p-2 w-full"
+                className="border border-gray-300 rounded-lg p-3 focus:outline-none focus:ring-2 focus:ring-blue-500"
             />
             <button
                 type="submit"
-                className="w-full bg-blue-500 py-2 rounded-full hover:bg-blue-600 transition"
+                className="w-full bg-blue-500 text-white py-3 rounded-lg hover:bg-blue-600 transition"
             >
                 Registrarse
             </button>

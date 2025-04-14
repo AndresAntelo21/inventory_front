@@ -6,48 +6,45 @@ export const AuthContainer: React.FC = () => {
     const [isLogin, setIsLogin] = useState(true);
 
     return (
-        <div className="w-screen h-screen flex items-center justify-center">
-            <div className="w-200 justify-center h-130 flex rounded-2xl overflow-hidden  backdrop-blur-2xl">
+        <div className="w-screen h-screen flex items-center justify-center bg-gradient-to-br from-blue-500 to-indigo-900">
+            <div className="w-[800px] h-[500px] flex rounded-3xl shadow-2xl overflow-hidden bg-white">
                 {/* Left side */}
                 <div
-                    className={`w-1/2 p-8 flex flex-col transition-all duration-500 ${isLogin ? "bg-blue-950/80" : "bg-white/10"
+                    className={`w-1/2 p-8 flex flex-col justify-center items-center transition-all duration-500 ${isLogin ? "bg-blue-500 text-white" : "bg-gray-100 text-gray-800"
                         }`}
                 >
                     {isLogin ? (
-                        <LoginForm />
+                        <>
+                            <h2 className="text-4xl font-bold mb-4 text-center">¡Bienvenido de nuevo!</h2>
+                            <p className="text-lg text-center">
+                                ¿No tienes una cuenta? Regístrate para comenzar.
+                            </p>
+                            <button
+                                onClick={() => setIsLogin(false)}
+                                className="mt-8 px-6 py-2 bg-white text-blue-500 rounded-full shadow-md hover:bg-gray-200 transition"
+                            >
+                                Crear Cuenta
+                            </button>
+                        </>
                     ) : (
-                        <div className="flex gap-2 flex-col w-full h-full items-center justify-center">
-                            <h2 className="font-poppins text-3xl text-center">¿Ya tienes cuenta?</h2>
-                            <span className="text-base">Inicia sesión para continuar</span>
+                        <>
+                            <h2 className="text-4xl font-bold mb-4">¡Hola!</h2>
+                            <p className="text-lg text-center">
+                                ¿Ya tienes una cuenta? Inicia sesión para continuar.
+                            </p>
                             <button
                                 onClick={() => setIsLogin(true)}
-                                className="bg-blue-500 py-3 w-50 rounded-full mt-10 transition hover:bg-blue-600"
+                                className="mt-8 px-6 py-2 bg-blue-500 text-white rounded-full shadow-md hover:bg-blue-600 transition"
                             >
-                                <span className="font-poppins">Iniciar sesión</span>
+                                Iniciar Sesión
                             </button>
-                        </div>
+                        </>
                     )}
                 </div>
 
                 {/* Right side */}
-                <div
-                    className={`w-1/2 p-8 flex flex-col transition-all duration-100 ${isLogin ? "bg-white/10" : "bg-blue-950/80"
-                        }`}
-                >
-                    {!isLogin ? (
-                        <RegisterForm />
-                    ) : (
-                        <div className="flex gap-2 flex-col w-full h-full items-center justify-center">
-                            <h2 className="font-poppins text-3xl text-center">¿No tienes cuenta?</h2>
-                            <p className="text-base">Regístrate para comenzar</p>
-                            <button
-                                onClick={() => setIsLogin(false)}
-                                className="bg-blue-500 py-3 w-50 rounded-full mt-10 transition hover:bg-blue-600"
-                            >
-                                Registrarse
-                            </button>
-                        </div>
-                    )}
+                <div className="w-1/2 p-8 flex items-center justify-center">
+                    {isLogin ? <LoginForm /> : <RegisterForm />}
                 </div>
             </div>
         </div>
