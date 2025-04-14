@@ -1,9 +1,9 @@
 import React from "react";
 
 interface SidebarItemProps {
-    icon: string; // Ruta de la imagen del ícono
-    text: string; // Texto que se mostrará
-    href: string; // URL a la que redirigirá
+    icon: string;
+    text: string;
+    href: string;
 }
 
 export const SidebarItem: React.FC<SidebarItemProps> = ({ icon, text, href }) => {
