@@ -6,7 +6,7 @@ export const AuthContainer: React.FC = () => {
     const [isLogin, setIsLogin] = useState(true);
 
     return (
-        <div className="w-screen h-screen flex items-center justify-center bg-gradient-to-br from-blue-500 to-indigo-900">
+        <div className="w-screen h-screen flex items-center justify-center bg-gradient-to-br from-blue-500 to-indigo-900 font-poppins">
             <div className="w-[800px] h-[500px] flex rounded-3xl shadow-2xl overflow-hidden bg-white">
                 {/* Left side */}
                 <div
