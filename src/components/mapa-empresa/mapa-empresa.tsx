@@ -1,68 +1,610 @@
 import { Mampara } from "./mampara";
 import { TransformWrapper, TransformComponent } from "react-zoom-pan-pinch";
-import { Draggable } from "@/components/draggable/draggable";
 import { useState } from "react";
 
 export const MapaEmpresa: React.FC = () => {
-    const [isDragging, setIsDragging] = useState(false); // Estado para controlar el arrastre
+    const [isDragging, setIsDragging] = useState(false);
 
     return (
-        <div className="flex w-full h-full">
+        <div className="flex">
             <TransformWrapper
                 initialScale={1}
-                minScale={0.5}
-                maxScale={3}
+                minScale={0.2}
+                maxScale={2}
                 centerOnInit
                 centerZoomedOut
-                limitToBounds={true}
-                panning={{ disabled: isDragging }} // Deshabilita el paneo mientras arrastras
+                limitToBounds={false}
+                panning={{ disabled: isDragging }}
             >
                 <TransformComponent>
-                    <div className="relative w-[3500px] h-[3000px] bg-amber-200">
-                        {/* Mampara 1 */}
-                        <Draggable
-                            defaultPosition={{ x: 100, y: 100 }}
-                            onStart={() => setIsDragging(true)} // Activa el estado de arrastre
-                            onStop={() => setIsDragging(false)} // Desactiva el estado de arrastre
-                        >
-                            <div>
-                                <Mampara
-                                    title="AGENTE 001"
-                                    ip="10.24.110.101"
-                                    mac="48-0F-CF-5D-34-5E"
-                                />
-                            </div>
-                        </Draggable>
-
-                        {/* Mampara 2 */}
-                        <Draggable
-                            defaultPosition={{ x: 300, y: 200 }}
-                            onStart={() => setIsDragging(true)}
-                            onStop={() => setIsDragging(false)}
-                        >
-                            <div>
-                                <Mampara
-                                    title="AGENTE 002"
-                                    ip="10.24.110.102"
-                                    mac="48-0F-CF-5D-34-5F"
-                                />
-                            </div>
-                        </Draggable>
-
-                        {/* Mampara 3 */}
-                        <Draggable
-                            defaultPosition={{ x: 500, y: 300 }}
-                            onStart={() => setIsDragging(true)}
-                            onStop={() => setIsDragging(false)}
-                        >
-                            <div>
-                                <Mampara
-                                    title="AGENTE 003"
-                                    ip="10.24.110.103"
-                                    mac="48-0F-CF-5D-34-60"
-                                />
-                            </div>
-                        </Draggable>
+                    <div className="relative w-[3500px] h-[2500px]">
+                        <div>
+                            <Mampara
+                                title="AGENTE057"
+                                ip="10.24.110.157"
+                                mac="BC-30-5B-B5-E8-8A"
+                                defaultPosition={{ x: 100, y: 440 }}
+                                type="mampara"
+                                onStart={() => setIsDragging(true)}
+                                onStop={() => setIsDragging(false)}
+                            />
+                            <Mampara
+                                title="AGENTE057"
+                                ip="10.24.110.157"
+                                mac="BC-30-5B-B5-E8-8A"
+                                defaultPosition={{ x: 100, y: 610 }}
+                                type="mampara"
+                                onStart={() => setIsDragging(true)}
+                                onStop={() => setIsDragging(false)}
+                            />
+                            <Mampara
+                                title="AGENTE057"
+                                ip="10.24.110.157"
+                                mac="BC-30-5B-B5-E8-8A"
+                                defaultPosition={{ x: 100, y: 780 }}
+                                type="mampara"
+                                onStart={() => setIsDragging(true)}
+                                onStop={() => setIsDragging(false)}
+                            />
+                            <Mampara
+                                title="AGENTE057"
+                                ip="10.24.110.157"
+                                mac="BC-30-5B-B5-E8-8A"
+                                defaultPosition={{ x: 100, y: 950 }}
+                                type="mampara"
+                                onStart={() => setIsDragging(true)}
+                                onStop={() => setIsDragging(false)}
+                            />
+                            <Mampara
+                                title="AGENTE057"
+                                ip="10.24.110.157"
+                                mac="BC-30-5B-B5-E8-8A"
+                                defaultPosition={{ x: 100, y: 1120 }}
+                                type="mampara"
+                                onStart={() => setIsDragging(true)}
+                                onStop={() => setIsDragging(false)}
+                            />
+                            <Mampara
+                                title="AGENTE057"
+                                ip="10.24.110.157"
+                                mac="BC-30-5B-B5-E8-8A"
+                                defaultPosition={{ x: 100, y: 1290 }}
+                                type="mampara"
+                                onStart={() => setIsDragging(true)}
+                                onStop={() => setIsDragging(false)}
+                            />
+                            {/*  */}
+                            <Mampara
+                                title="AGENTE057"
+                                ip="10.24.110.157"
+                                mac="BC-30-5B-B5-E8-8A"
+                                defaultPosition={{ x: 270, y: 440 }}
+                                type="mampara"
+                                onStart={() => setIsDragging(true)}
+                                onStop={() => setIsDragging(false)}
+                            />
+                            <Mampara
+                                title="AGENTE057"
+                                ip="10.24.110.157"
+                                mac="BC-30-5B-B5-E8-8A"
+                                defaultPosition={{ x: 270, y: 610 }}
+                                type="mampara"
+                                onStart={() => setIsDragging(true)}
+                                onStop={() => setIsDragging(false)}
+                            />
+                            <Mampara
+                                title="AGENTE057"
+                                ip="10.24.110.157"
+                                mac="BC-30-5B-B5-E8-8A"
+                                defaultPosition={{ x: 270, y: 780 }}
+                                type="mampara"
+                                onStart={() => setIsDragging(true)}
+                                onStop={() => setIsDragging(false)}
+                            />
+                            <Mampara
+                                title="AGENTE057"
+                                ip="10.24.110.157"
+                                mac="BC-30-5B-B5-E8-8A"
+                                defaultPosition={{ x: 270, y: 950 }}
+                                type="mampara"
+                                onStart={() => setIsDragging(true)}
+                                onStop={() => setIsDragging(false)}
+                            />
+                            <Mampara
+                                title="AGENTE057"
+                                ip="10.24.110.157"
+                                mac="BC-30-5B-B5-E8-8A"
+                                defaultPosition={{ x: 270, y: 1120 }}
+                                type="mampara"
+                                onStart={() => setIsDragging(true)}
+                                onStop={() => setIsDragging(false)}
+                            />
+                            <Mampara
+                                title="AGENTE057"
+                                ip="10.24.110.157"
+                                mac="BC-30-5B-B5-E8-8A"
+                                defaultPosition={{ x: 270, y: 1290 }}
+                                type="mampara"
+                                onStart={() => setIsDragging(true)}
+                                onStop={() => setIsDragging(false)}
+                            />
+                        </div>
+                        <div>
+                            <Mampara
+                                title="AGENTE057"
+                                ip="10.24.110.157"
+                                mac="BC-30-5B-B5-E8-8A"
+                                defaultPosition={{ x: 610, y: 270 }}
+                                type="mampara"
+                                onStart={() => setIsDragging(true)}
+                                onStop={() => setIsDragging(false)}
+                            />
+                            {/* <Mampara
+                                title="AGENTE057"
+                                ip="10.24.110.157"
+                                mac="BC-30-5B-B5-E8-8A"
+                                defaultPosition={{ x: 610, y: 440 }}
+                                type="mampara"
+                                onStart={() => setIsDragging(true)}
+                                onStop={() => setIsDragging(false)}
+                            /> */}
+                            <Mampara
+                                title="AGENTE057"
+                                ip="10.24.110.157"
+                                mac="BC-30-5B-B5-E8-8A"
+                                defaultPosition={{ x: 610, y: 950 }}
+                                type="mampara"
+                                onStart={() => setIsDragging(true)}
+                                onStop={() => setIsDragging(false)}
+                            />
+                            <Mampara
+                                title="AGENTE057"
+                                ip="10.24.110.157"
+                                mac="BC-30-5B-B5-E8-8A"
+                                defaultPosition={{ x: 610, y: 1120 }}
+                                type="mampara"
+                                onStart={() => setIsDragging(true)}
+                                onStop={() => setIsDragging(false)}
+                            />
+                            <Mampara
+                                title="AGENTE057"
+                                ip="10.24.110.157"
+                                mac="BC-30-5B-B5-E8-8A"
+                                defaultPosition={{ x: 610, y: 1290 }}
+                                type="mampara"
+                                onStart={() => setIsDragging(true)}
+                                onStop={() => setIsDragging(false)}
+                            />
+                            <Mampara
+                                title="AGENTE057"
+                                ip="10.24.110.157"
+                                mac="BC-30-5B-B5-E8-8A"
+                                defaultPosition={{ x: 610, y: 1460 }}
+                                type="supervisor"
+                                onStart={() => setIsDragging(true)}
+                                onStop={() => setIsDragging(false)}
+                            />
+                            {/*  */}
+                            <Mampara
+                                title="AGENTE057"
+                                ip="10.24.110.157"
+                                mac="BC-30-5B-B5-E8-8A"
+                                defaultPosition={{ x: 780, y: 440 }}
+                                type="mampara"
+                                onStart={() => setIsDragging(true)}
+                                onStop={() => setIsDragging(false)}
+                            />
+                            <Mampara
+                                title="AGENTE057"
+                                ip="10.24.110.157"
+                                mac="BC-30-5B-B5-E8-8A"
+                                defaultPosition={{ x: 780, y: 610 }}
+                                type="mampara"
+                                onStart={() => setIsDragging(true)}
+                                onStop={() => setIsDragging(false)}
+                            />
+                            <Mampara
+                                title="AGENTE057"
+                                ip="10.24.110.157"
+                                mac="BC-30-5B-B5-E8-8A"
+                                defaultPosition={{ x: 780, y: 780 }}
+                                type="mampara"
+                                onStart={() => setIsDragging(true)}
+                                onStop={() => setIsDragging(false)}
+                            />
+                            <Mampara
+                                title="AGENTE057"
+                                ip="10.24.110.157"
+                                mac="BC-30-5B-B5-E8-8A"
+                                defaultPosition={{ x: 780, y: 950 }}
+                                type="mampara"
+                                onStart={() => setIsDragging(true)}
+                                onStop={() => setIsDragging(false)}
+                            />
+                            <Mampara
+                                title="AGENTE057"
+                                ip="10.24.110.157"
+                                mac="BC-30-5B-B5-E8-8A"
+                                defaultPosition={{ x: 780, y: 1120 }}
+                                type="mampara"
+                                onStart={() => setIsDragging(true)}
+                                onStop={() => setIsDragging(false)}
+                            />
+                            <Mampara
+                                title="AGENTE057"
+                                ip="10.24.110.157"
+                                mac="BC-30-5B-B5-E8-8A"
+                                defaultPosition={{ x: 780, y: 1290 }}
+                                type="mampara"
+                                onStart={() => setIsDragging(true)}
+                                onStop={() => setIsDragging(false)}
+                            />
+                            <Mampara
+                                title="AGENTE057"
+                                ip="10.24.110.157"
+                                mac="BC-30-5B-B5-E8-8A"
+                                defaultPosition={{ x: 780, y: 1460 }}
+                                type="mampara"
+                                onStart={() => setIsDragging(true)}
+                                onStop={() => setIsDragging(false)}
+                            />
+                        </div>
+                        <div>
+                            <Mampara
+                                title="JEFCALYCAP"
+                                ip="10.24.110.157"
+                                mac="BC-30-5B-B5-E8-8A"
+                                defaultPosition={{ x: 610, y: 1800 }}
+                                type="jefe"
+                                onStart={() => setIsDragging(true)}
+                                onStop={() => setIsDragging(false)}
+                            />
+                            <Mampara
+                                title="JEFMUEVR02"
+                                ip="10.24.110.157"
+                                mac="BC-30-5B-B5-E8-8A"
+                                defaultPosition={{ x: 1460, y: 1800 }}
+                                type="jefe"
+                                onStart={() => setIsDragging(true)}
+                                onStop={() => setIsDragging(false)}
+                            />
+                        </div>
+                        <div>
+                            <Mampara
+                                title="AGENTE005"
+                                ip="10.24.110.157"
+                                mac="BC-30-5B-B5-E8-8A"
+                                defaultPosition={{ x: 1460, y: 1460 }}
+                                type="mampara"
+                                onStart={() => setIsDragging(true)}
+                                onStop={() => setIsDragging(false)}
+                            />
+                            <Mampara
+                                title="AGENTE005"
+                                ip="10.24.110.157"
+                                mac="BC-30-5B-B5-E8-8A"
+                                defaultPosition={{ x: 1630, y: 1460 }}
+                                type="mampara"
+                                onStart={() => setIsDragging(true)}
+                                onStop={() => setIsDragging(false)}
+                            />
+                            <Mampara
+                                title="AGENTE005"
+                                ip="10.24.110.157"
+                                mac="BC-30-5B-B5-E8-8A"
+                                defaultPosition={{ x: 1800, y: 1460 }}
+                                type="mampara"
+                                onStart={() => setIsDragging(true)}
+                                onStop={() => setIsDragging(false)}
+                            />
+                            <Mampara
+                                title="AGENTE005"
+                                ip="10.24.110.157"
+                                mac="BC-30-5B-B5-E8-8A"
+                                defaultPosition={{ x: 1970, y: 1460 }}
+                                type="mampara"
+                                onStart={() => setIsDragging(true)}
+                                onStop={() => setIsDragging(false)}
+                            />
+                            <Mampara
+                                title="AGENTE005"
+                                ip="10.24.110.157"
+                                mac="BC-30-5B-B5-E8-8A"
+                                defaultPosition={{ x: 2140, y: 1460 }}
+                                type="mampara"
+                                onStart={() => setIsDragging(true)}
+                                onStop={() => setIsDragging(false)}
+                            />
+                            {/*  */}
+                            <Mampara
+                                title="AGENTE005"
+                                ip="10.24.110.157"
+                                mac="BC-30-5B-B5-E8-8A"
+                                defaultPosition={{ x: 1460, y: 1290 }}
+                                type="mampara"
+                                onStart={() => setIsDragging(true)}
+                                onStop={() => setIsDragging(false)}
+                            />
+                            <Mampara
+                                title="AGENTE005"
+                                ip="10.24.110.157"
+                                mac="BC-30-5B-B5-E8-8A"
+                                defaultPosition={{ x: 1630, y: 1290 }}
+                                type="mampara"
+                                onStart={() => setIsDragging(true)}
+                                onStop={() => setIsDragging(false)}
+                            />
+                            <Mampara
+                                title="AGENTE005"
+                                ip="10.24.110.157"
+                                mac="BC-30-5B-B5-E8-8A"
+                                defaultPosition={{ x: 1800, y: 1290 }}
+                                type="mampara"
+                                onStart={() => setIsDragging(true)}
+                                onStop={() => setIsDragging(false)}
+                            />
+                            <Mampara
+                                title="AGENTE005"
+                                ip="10.24.110.157"
+                                mac="BC-30-5B-B5-E8-8A"
+                                defaultPosition={{ x: 1970, y: 1290 }}
+                                type="mampara"
+                                onStart={() => setIsDragging(true)}
+                                onStop={() => setIsDragging(false)}
+                            />
+                            <Mampara
+                                title="AGENTE005"
+                                ip="10.24.110.157"
+                                mac="BC-30-5B-B5-E8-8A"
+                                defaultPosition={{ x: 2140, y: 1290 }}
+                                type="mampara"
+                                onStart={() => setIsDragging(true)}
+                                onStop={() => setIsDragging(false)}
+                            />
+                        </div>
+                        <div>
+                            <Mampara
+                                title="AGENTE005"
+                                ip="10.24.110.157"
+                                mac="BC-30-5B-B5-E8-8A"
+                                defaultPosition={{ x: 1630, y: 780 }}
+                                type="mampara"
+                                onStart={() => setIsDragging(true)}
+                                onStop={() => setIsDragging(false)}
+                            />
+                            <Mampara
+                                title="AGENTE005"
+                                ip="10.24.110.157"
+                                mac="BC-30-5B-B5-E8-8A"
+                                defaultPosition={{ x: 1800, y: 780 }}
+                                type="mampara"
+                                onStart={() => setIsDragging(true)}
+                                onStop={() => setIsDragging(false)}
+                            />
+                            <Mampara
+                                title="AGENTE005"
+                                ip="10.24.110.157"
+                                mac="BC-30-5B-B5-E8-8A"
+                                defaultPosition={{ x: 1970, y: 780 }}
+                                type="mampara"
+                                onStart={() => setIsDragging(true)}
+                                onStop={() => setIsDragging(false)}
+                            />
+                            <Mampara
+                                title="AGENTE005"
+                                ip="10.24.110.157"
+                                mac="BC-30-5B-B5-E8-8A"
+                                defaultPosition={{ x: 2140, y: 780 }}
+                                type="mampara"
+                                onStart={() => setIsDragging(true)}
+                                onStop={() => setIsDragging(false)}
+                            />
+                            {/*  */}
+                            <Mampara
+                                title="AGENTE005"
+                                ip="10.24.110.157"
+                                mac="BC-30-5B-B5-E8-8A"
+                                defaultPosition={{ x: 2310, y: 610 }}
+                                type="mampara"
+                                onStart={() => setIsDragging(true)}
+                                onStop={() => setIsDragging(false)}
+                            />
+                            <Mampara
+                                title="AGENTE005"
+                                ip="10.24.110.157"
+                                mac="BC-30-5B-B5-E8-8A"
+                                defaultPosition={{ x: 2310, y: 440 }}
+                                type="mampara"
+                                onStart={() => setIsDragging(true)}
+                                onStop={() => setIsDragging(false)}
+                            />
+                            {/*  */}
+                            <Mampara
+                                title="AGENTE005"
+                                ip="10.24.110.157"
+                                mac="BC-30-5B-B5-E8-8A"
+                                defaultPosition={{ x: 1800, y: 270 }}
+                                type="mampara"
+                                onStart={() => setIsDragging(true)}
+                                onStop={() => setIsDragging(false)}
+                            />
+                            <Mampara
+                                title="AGENTE005"
+                                ip="10.24.110.157"
+                                mac="BC-30-5B-B5-E8-8A"
+                                defaultPosition={{ x: 1970, y: 270 }}
+                                type="mampara"
+                                onStart={() => setIsDragging(true)}
+                                onStop={() => setIsDragging(false)}
+                            />
+                            <Mampara
+                                title="AGENTE005"
+                                ip="10.24.110.157"
+                                mac="BC-30-5B-B5-E8-8A"
+                                defaultPosition={{ x: 2140, y: 270 }}
+                                type="mampara"
+                                onStart={() => setIsDragging(true)}
+                                onStop={() => setIsDragging(false)}
+                            />
+                        </div>
+                        <div>
+                            <Mampara
+                                title="AGENTE005"
+                                ip="10.24.110.157"
+                                mac="BC-30-5B-B5-E8-8A"
+                                defaultPosition={{ x: 2140, y: -70 }}
+                                type="mampara"
+                                onStart={() => setIsDragging(true)}
+                                onStop={() => setIsDragging(false)}
+                            />
+                            <Mampara
+                                title="AGENTE005"
+                                ip="10.24.110.157"
+                                mac="BC-30-5B-B5-E8-8A"
+                                defaultPosition={{ x: 1970, y: -70 }}
+                                type="mampara"
+                                onStart={() => setIsDragging(true)}
+                                onStop={() => setIsDragging(false)}
+                            />
+                            <Mampara
+                                title="AGENTE005"
+                                ip="10.24.110.157"
+                                mac="BC-30-5B-B5-E8-8A"
+                                defaultPosition={{ x: 1800, y: -70 }}
+                                type="mampara"
+                                onStart={() => setIsDragging(true)}
+                                onStop={() => setIsDragging(false)}
+                            />
+                            <Mampara
+                                title="AGENTE005"
+                                ip="10.24.110.157"
+                                mac="BC-30-5B-B5-E8-8A"
+                                defaultPosition={{ x: 1630, y: -70 }}
+                                type="mampara"
+                                onStart={() => setIsDragging(true)}
+                                onStop={() => setIsDragging(false)}
+                            />
+                            <Mampara
+                                title="AGENTE005"
+                                ip="10.24.110.157"
+                                mac="BC-30-5B-B5-E8-8A"
+                                defaultPosition={{ x: 1460, y: -70 }}
+                                type="mampara"
+                                onStart={() => setIsDragging(true)}
+                                onStop={() => setIsDragging(false)}
+                            />
+                            <Mampara
+                                title="AGENTE005"
+                                ip="10.24.110.157"
+                                mac="BC-30-5B-B5-E8-8A"
+                                defaultPosition={{ x: 1290, y: -70 }}
+                                type="mampara"
+                                onStart={() => setIsDragging(true)}
+                                onStop={() => setIsDragging(false)}
+                            />
+                            {/*  */}
+                            <Mampara
+                                title="AGENTE005"
+                                ip="10.24.110.157"
+                                mac="BC-30-5B-B5-E8-8A"
+                                defaultPosition={{ x: 2140, y: -240 }}
+                                type="mampara"
+                                onStart={() => setIsDragging(true)}
+                                onStop={() => setIsDragging(false)}
+                            />
+                            <Mampara
+                                title="AGENTE005"
+                                ip="10.24.110.157"
+                                mac="BC-30-5B-B5-E8-8A"
+                                defaultPosition={{ x: 1970, y: -240 }}
+                                type="mampara"
+                                onStart={() => setIsDragging(true)}
+                                onStop={() => setIsDragging(false)}
+                            />
+                            <Mampara
+                                title="AGENTE005"
+                                ip="10.24.110.157"
+                                mac="BC-30-5B-B5-E8-8A"
+                                defaultPosition={{ x: 1800, y: -240 }}
+                                type="mampara"
+                                onStart={() => setIsDragging(true)}
+                                onStop={() => setIsDragging(false)}
+                            />
+                            <Mampara
+                                title="AGENTE005"
+                                ip="10.24.110.157"
+                                mac="BC-30-5B-B5-E8-8A"
+                                defaultPosition={{ x: 1630, y: -240 }}
+                                type="mampara"
+                                onStart={() => setIsDragging(true)}
+                                onStop={() => setIsDragging(false)}
+                            />
+                            <Mampara
+                                title="AGENTE005"
+                                ip="10.24.110.157"
+                                mac="BC-30-5B-B5-E8-8A"
+                                defaultPosition={{ x: 1460, y: -240 }}
+                                type="mampara"
+                                onStart={() => setIsDragging(true)}
+                                onStop={() => setIsDragging(false)}
+                            />
+                            <Mampara
+                                title="AGENTE005"
+                                ip="10.24.110.157"
+                                mac="BC-30-5B-B5-E8-8A"
+                                defaultPosition={{ x: 1290, y: -240 }}
+                                type="mampara"
+                                onStart={() => setIsDragging(true)}
+                                onStop={() => setIsDragging(false)}
+                            />
+                        </div>
+                        {/* RH */}
+                        <div>
+                            <Mampara
+                                title="GENERALISTA"
+                                ip="10.24.110.157"
+                                mac="BC-30-5B-B5-E8-8A"
+                                defaultPosition={{ x: 2650, y: -240 }}
+                                type="administrativo"
+                                onStart={() => setIsDragging(true)}
+                                onStop={() => setIsDragging(false)}
+                            />
+                            <Mampara
+                                title="AUXRH"
+                                ip="10.24.110.157"
+                                mac="BC-30-5B-B5-E8-8A"
+                                defaultPosition={{ x: 2820, y: -70 }}
+                                type="administrativo"
+                                onStart={() => setIsDragging(true)}
+                                onStop={() => setIsDragging(false)}
+                            />
+                        </div>
+                        {/* GERENCIA */}
+                        <div>
+                            <Mampara
+                                title="GERENCIA"
+                                ip="10.24.110.157"
+                                mac="BC-30-5B-B5-E8-8A"
+                                defaultPosition={{ x: 2650, y: 100 }}
+                                type="gerencia"
+                                onStart={() => setIsDragging(true)}
+                                onStop={() => setIsDragging(false)}
+                            />
+                        </div>
+                        {/* SALA-CAPACITACION 2 */}
+                        <div>
+                            <Mampara
+                                title="SALACAPA2"
+                                ip="10.24.110.157"
+                                mac="BC-30-5B-B5-E8-8A"
+                                defaultPosition={{ x: 2650, y: 2140 }}
+                                type="salacapa"
+                                onStart={() => setIsDragging(true)}
+                                onStop={() => setIsDragging(false)}
+                            />
+                        </div>
+                        {/* SISTEMAS */}
+                        <div></div>
                     </div>
                 </TransformComponent>
             </TransformWrapper>
