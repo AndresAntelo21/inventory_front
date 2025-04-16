@@ -573,8 +573,8 @@ export const MapaEmpresa: React.FC = () => {
                                 title="AUXRH"
                                 ip="10.24.110.157"
                                 mac="BC-30-5B-B5-E8-8A"
-                                defaultPosition={{ x: 2820, y: -70 }}
-                                type="administrativo"
+                                defaultPosition={{ x: 2990, y: -70 }}
+                                type="empleado"
                                 onStart={() => setIsDragging(true)}
                                 onStop={() => setIsDragging(false)}
                             />
@@ -594,17 +594,175 @@ export const MapaEmpresa: React.FC = () => {
                         {/* SALA-CAPACITACION 2 */}
                         <div>
                             <Mampara
-                                title="SALACAPA2"
+                                title="SALACAPA02"
                                 ip="10.24.110.157"
                                 mac="BC-30-5B-B5-E8-8A"
-                                defaultPosition={{ x: 2650, y: 2140 }}
+                                defaultPosition={{ x: 2650, y: 1120 }}
                                 type="salacapa"
                                 onStart={() => setIsDragging(true)}
                                 onStop={() => setIsDragging(false)}
                             />
                         </div>
                         {/* SISTEMAS */}
-                        <div></div>
+                        <div>
+                            <Mampara
+                                title="SOPORTE"
+                                ip="10.24.110.157"
+                                mac="BC-30-5B-B5-E8-8A"
+                                defaultPosition={{ x: 3330, y: -240 }}
+                                type="empleado"
+                                onStart={() => setIsDragging(true)}
+                                onStop={() => setIsDragging(false)}
+                            />
+                            <Mampara
+                                title="SISTEMAS"
+                                ip="10.24.110.157"
+                                mac="BC-30-5B-B5-E8-8A"
+                                defaultPosition={{ x: 3670, y: -70 }}
+                                type="administrativo"
+                                onStart={() => setIsDragging(true)}
+                                onStop={() => setIsDragging(false)}
+                            />
+                        </div>
+                        {/* RECLUTAMIENTO */}
+                        <div>
+                            <Mampara
+                                title="RECLU01"
+                                ip="10.24.110.157"
+                                mac="BC-30-5B-B5-E8-8A"
+                                defaultPosition={{ x: 3670, y: 100 }}
+                                type="empleado"
+                                onStart={() => setIsDragging(true)}
+                                onStop={() => setIsDragging(false)}
+                            />
+                            <Mampara
+                                title="JEFRECLU"
+                                ip="10.24.110.157"
+                                mac="BC-30-5B-B5-E8-8A"
+                                defaultPosition={{ x: 3500, y: 270 }}
+                                type="administrativo"
+                                onStart={() => setIsDragging(true)}
+                                onStop={() => setIsDragging(false)}
+                            />
+                            <Mampara
+                                title="RECLU02"
+                                ip="10.24.110.157"
+                                mac="BC-30-5B-B5-E8-8A"
+                                defaultPosition={{ x: 3330, y: 100 }}
+                                type="empleado"
+                                onStart={() => setIsDragging(true)}
+                                onStop={() => setIsDragging(false)}
+                            />
+                        </div>
+                        {/* salas entrevista y psicologia */}
+                        <div>
+                            <Mampara
+                                title="SALA ENTREVISTA 1"
+                                ip="10.24.110.157"
+                                mac="BC-30-5B-B5-E8-8A"
+                                defaultPosition={{ x: 3330, y: 440 }}
+                                type="salasentrevista"
+                                onStart={() => setIsDragging(true)}
+                                onStop={() => setIsDragging(false)}
+                            />
+                            <Mampara
+                                title="SALA ENTREVISTA 2"
+                                ip="10.24.110.157"
+                                mac="BC-30-5B-B5-E8-8A"
+                                defaultPosition={{ x: 3330, y: 610 }}
+                                type="salasentrevista"
+                                onStart={() => setIsDragging(true)}
+                                onStop={() => setIsDragging(false)}
+                            />
+                            <Mampara
+                                title="PSICOLOGIA"
+                                ip="10.24.110.157"
+                                mac="BC-30-5B-B5-E8-8A"
+                                defaultPosition={{ x: 3330, y: 780 }}
+                                type="psicologia"
+                                onStart={() => setIsDragging(true)}
+                                onStop={() => setIsDragging(false)}
+                            />
+                        </div>
+                        {/* CAPACITACION */}
+                        <div>
+                            <Mampara
+                                title="CAPA02"
+                                ip="10.24.110.157"
+                                mac="BC-30-5B-B5-E8-8A"
+                                defaultPosition={{ x: 3330, y: 950 }}
+                                type="capa"
+                                onStart={() => setIsDragging(true)}
+                                onStop={() => setIsDragging(false)}
+                            />
+                            <Mampara
+                                title="CAPA01"
+                                ip="10.24.110.157"
+                                mac="BC-30-5B-B5-E8-8A"
+                                defaultPosition={{ x: 3670, y: 950 }}
+                                type="capa"
+                                onStart={() => setIsDragging(true)}
+                                onStop={() => setIsDragging(false)}
+                            />
+                            <Mampara
+                                title="SALACAPA01"
+                                ip="10.24.110.157"
+                                mac="BC-30-5B-B5-E8-8A"
+                                defaultPosition={{ x: 3330, y: 1120 }}
+                                type="salacapa"
+                                onStart={() => setIsDragging(true)}
+                                onStop={() => setIsDragging(false)}
+                            />
+                        </div>
+                        {/* SITE */}
+                        <div>
+                            <Mampara
+                                title="STAFF001"
+                                ip="10.24.110.157"
+                                mac="BC-30-5B-B5-E8-8A"
+                                defaultPosition={{ x: 1630, y: 1970 }}
+                                type="site"
+                                onStart={() => setIsDragging(true)}
+                                onStop={() => setIsDragging(false)}
+                            />
+                        </div>
+                        {/* RECEPCION */}
+                        <div>
+                            <Mampara
+                                title="RECEPCION"
+                                ip="10.24.110.157"
+                                mac="BC-30-5B-B5-E8-8A"
+                                defaultPosition={{ x: 3840, y: -410 }}
+                                type="recepcion"
+                                onStart={() => setIsDragging(true)}
+                                onStop={() => setIsDragging(false)}
+                            />
+                        </div>
+                        {/* SALAS */}
+                        <div>
+                            <Mampara
+                                title="SALAS"
+                                ip="10.24.110.157"
+                                mac="BC-30-5B-B5-E8-8A"
+                                defaultPosition={{ x: 3840, y: -240 }}
+                                type="sala"
+                                onStart={() => setIsDragging(true)}
+                                onStop={() => setIsDragging(false)}
+                            />
+                        </div>
+                        {/* BODEGA */}
+                        <div>
+                            <Mampara
+                                title="BODEGA"
+                                ip="10.24.110.157"
+                                mac="BC-30-5B-B5-E8-8A"
+                                defaultPosition={{ x: 2650, y: 1630 }}
+                                type="bodega"
+                                onStart={() => setIsDragging(true)}
+                                onStop={() => setIsDragging(false)}
+                            />
+
+                        </div>
                     </div>
                 </TransformComponent>
             </TransformWrapper>

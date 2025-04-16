@@ -7,19 +7,24 @@ interface MamparaProps {
     defaultPosition?: { x: number; y: number };
     onStart?: () => void;
     onStop?: () => void;
-    type?: "mampara" | "administrativo" | "site" | "bodega" | "jefe" | "supervisor" | "sala" | "gerencia" | "salacapa";
+    type?: "mampara" | "administrativo" | "site" | "bodega" | "jefe" | "supervisor" | "sala" | "gerencia" | "salacapa" | "empleado" | "salasentrevista" | "psicologia" | "capa" | "recepcion";
 }
 
 const typeStyles: Record<string, { size: string; bgColor: string }> = {
     mampara: { size: "size-40", bgColor: "bg-blue-400" },
     administrativo: { size: "size-40", bgColor: "bg-purple-700" },
-    gerencia: { size: "w-83 h-340", bgColor: "bg-purple-700" },
-    salacapa: { size: "size-83", bgColor: "bg-purple-500" },
-    site: { size: "w-60 h-30", bgColor: "bg-indigo-500" },
-    bodega: { size: "w-50 h-25", bgColor: "bg-gray-600" },
+    gerencia: { size: "w-125 h-210", bgColor: "bg-purple-700" },
+    salacapa: { size: "size-125", bgColor: "bg-purple-500" },
+    site: { size: "w-250 h-100", bgColor: "bg-indigo-500" },
+    bodega: { size: "w-295 h-185", bgColor: "bg-gray-600" },
     jefe: { size: "w-150 h-40", bgColor: "bg-purple-700" },
+    empleado: { size: "size-40", bgColor: "bg-purple-500" },
     supervisor: { size: "size-40", bgColor: "bg-blue-700" },
-    sala: { size: "w-100 h-200", bgColor: "bg-green-400" },
+    sala: { size: "w-125 h-653", bgColor: "bg-green-400" },
+    salasentrevista: { size: "w-125 h-40", bgColor: "bg-orange-400" },
+    psicologia: { size: "w-125 h-40", bgColor: "bg-blue-400" },
+    capa: { size: "size-40", bgColor: "bg-blue-700" },
+    recepcion: { size: "w-125 h-40", bgColor: "bg-blue-400" },
 };
 
 export const Mampara: React.FC<MamparaProps> = ({
