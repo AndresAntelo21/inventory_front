@@ -5,6 +5,7 @@ interface MamparaProps {
     ip: string;
     mac: string;
     defaultPosition?: { x: number; y: number };
+    isEditing?: boolean; // Controla si es arrastrable
     onStart?: () => void;
     onStop?: () => void;
     type?: "mampara" | "administrativo" | "site" | "bodega" | "jefe" | "supervisor" | "sala" | "gerencia" | "salacapa" | "empleado" | "salasentrevista" | "psicologia" | "capa" | "recepcion";
@@ -32,25 +33,43 @@ export const Mampara: React.FC<MamparaProps> = ({
     ip,
     mac,
     defaultPosition,
+    isEditing = false,
     onStart,
     onStop,
     type = "mampara",
 }) => {
-    const { size, bgColor } = typeStyles[type] || typeStyles["mampara"]; // Estilos según el tipo
+    const { size, bgColor } = typeStyles[type] || typeStyles["mampara"];
+
+    if (isEditing) {
+        return (
+            <Draggable
+                defaultPosition={defaultPosition}
+                onStart={onStart}
+                onStop={onStop}
+            >
+                <div
+                    className={`${size} ${bgColor} flex flex-col items-center justify-center rounded-2xl font-poppins font-bold text-white`}
+                >
+                    <h1>{title}</h1>
+                    <span className="text-sm font-semibold tracking-widest">{ip}</span>
+                    <span className="text-sm font-semibold">{mac}</span>
+                </div>
+            </Draggable>
+        );
+    }
 
     return (
-        <Draggable
-            defaultPosition={defaultPosition}
-            onStart={onStart}
-            onStop={onStop}
+        <div
+            style={{
+                position: "absolute",
+                left: defaultPosition?.x,
+                top: defaultPosition?.y,
+            }}
+            className={`${size} ${bgColor} flex flex-col items-center justify-center rounded-2xl font-poppins font-bold text-white`}
         >
-            <div
-                className={`${size} ${bgColor} flex flex-col items-center justify-center rounded-2xl font-poppins font-bold text-white`}
-            >
-                <h1>{title}</h1>
-                <span className="text-sm font-semibold tracking-widest">{ip}</span>
-                <span className="text-sm font-semibold">{mac}</span>
-            </div>
-        </Draggable>
+            <h1>{title}</h1>
+            <span className="text-sm font-semibold tracking-widest">{ip}</span>
+            <span className="text-sm font-semibold">{mac}</span>
+        </div>
     );
 };
