@@ -1,4 +1,4 @@
-import { Draggable } from "@/components/draggable/draggable";
+import { Draggable } from "@/components/page/draggable/draggable";
 
 interface MamparaProps {
     title: string;

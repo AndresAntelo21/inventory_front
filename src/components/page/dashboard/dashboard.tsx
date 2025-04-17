@@ -1,4 +1,4 @@
-import { Draggable } from "@/components/draggable/draggable";
+import { Draggable } from "@/components/page/draggable/draggable";
 
 export const Dashboard: React.FC = () => {
     return (
