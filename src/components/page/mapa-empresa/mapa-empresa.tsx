@@ -1,7 +1,7 @@
 import { Mampara } from "./mampara";
 import { TransformWrapper, TransformComponent } from "react-zoom-pan-pinch";
 import { useState } from "react";
-import { ZoomButton } from "@/components/page/mapa-empresa/zoom";
+import { AddMamparaButton } from "@/components/page/mapa-empresa/add-mampara-button";
 import { Buscador } from "@/components/buscador/buscador";
 export const MapaEmpresa: React.FC = () => {
     const [isDragging, setIsDragging] = useState(false);
@@ -9,7 +9,7 @@ export const MapaEmpresa: React.FC = () => {
     return (
         <div className="flex">
             <Buscador />
-            <ZoomButton />
+            <AddMamparaButton />
             <TransformWrapper
                 initialScale={1}
                 minScale={0.2}
