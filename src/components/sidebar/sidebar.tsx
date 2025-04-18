@@ -5,7 +5,7 @@ export const Sidebar: React.FC = () => {
         <div className="fixed top-0 left-0 h-screen bg-black border-r-1 flex flex-col overflow-hidden hover:w-60 w-12 transition-all duration-300 ease-in-out whitespace-nowrap text-ellipsis z-10">
             <div className="sticky top-0 bg-black/40 backdrop-blur-md ">
                 <div className="flex flex-row items-center gap-3 pl-2 py-4">
-                    <img src="/logo/crafting-table.svg" alt="logo Systock" className="size-8" />
+                    <img src="/logo/image.png" alt="logo Systock" className="size-10" />
                     <h1 className="text-center text-2xl font-semibold tracking-wider text-white">Systock</h1>
                 </div>
                 <div className="bg-white w-full h-[1px]"></div>
