@@ -11,6 +11,7 @@ export const Sidebar: React.FC = () => {
                 <div className="bg-white w-full h-[1px]"></div>
             </div>
             <div className="pt-4 flex flex-col gap-3 overflow-y-auto pb-30 sidebar-scroll line-clamp-1">
+                {/* COMENTARIO SIN SENTIDO XD */}
                 <SidebarItem
                     icon="/sidebar-icons/dashboard.svg"
                     text="Dashboard"
