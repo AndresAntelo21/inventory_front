@@ -845,7 +845,6 @@ export const MapaEmpresa: React.FC = () => {
                                 onStart={() => setIsDragging(true)}
                                 onStop={() => setIsDragging(false)}
                             />
-
                         </div>
                     </div>
                 </TransformComponent>
