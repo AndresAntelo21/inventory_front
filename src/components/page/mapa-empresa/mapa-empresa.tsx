@@ -3,7 +3,7 @@ import { TransformWrapper, TransformComponent } from "react-zoom-pan-pinch";
 import { useState } from "react";
 import { AddMamparaButton } from "@/components/page/mapa-empresa/add-mampara-button";
 import { Buscador } from "@/components/buscador/buscador";
-
+// MAPEAR TODO ESTO, MUCHO CODIGO.
 export const MapaEmpresa: React.FC = () => {
     const [isDragging, setIsDragging] = useState(false);
     const [isEditing, setIsEditing] = useState(false);
